@@ -1,11 +1,13 @@
 package com.Perfulandia.ApiSucursales.dto;
 
-import java.time.LocalDate; 
+import java.time.LocalDate;
+
+import org.springframework.hateoas.RepresentationModel;
 
 import lombok.Data;
 
 @Data
-public class SucursalDTO {
+public class SucursalDTO extends RepresentationModel{
     private int idSucursal;
     private String nombreSucursal;
     private int telefono;
